@@ -1,28 +1,28 @@
 <template>
-  <div id="app">
-    <img alt="Vue logo" src="./assets/logo.png">
-    <HelloWorld msg="Welcome to Your Vue.js App"/>
-  </div>
+  <v-app>
+    <v-app-bar app color="#393f4d" dark>
+    <div class="d-flex mx-auto">
+      <h1>Trello</h1>
+    </div>
+    </v-app-bar>
+    <v-content class="bg-black">
+      <Board/>
+    </v-content>
+  </v-app>
 </template>
 
 <script>
-import HelloWorld from './components/HelloWorld.vue'
-
+import Board from './components/Board';
 export default {
-  name: 'app',
-  components: {
-    HelloWorld
-  }
-}
-</script>
+  name: 'App',
 
-<style>
-#app {
-  font-family: 'Avenir', Helvetica, Arial, sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  text-align: center;
-  color: #2c3e50;
-  margin-top: 60px;
-}
+  components: {
+    Board
+  }
+};
+</script>
+<style scoped>
+  .bg-black {
+    background:#1d1e22;
+  }
 </style>
