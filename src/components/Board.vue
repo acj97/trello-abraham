@@ -83,7 +83,7 @@ export default {
     // },
     add: function() {
       if(this.list != "") {
-        this.items.push({ title: this.list, id: id++ });
+        this.items.push({ id: id++,title: {title: this.list}});
         this.list = "";
       }
     }
