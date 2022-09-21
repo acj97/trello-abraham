@@ -13,7 +13,7 @@
     "vue": "^2.6.10",
     "vuedraggable": "^2.23.2",
     "vuefire": "^2.2.0",
-    "vuetify": "^2.1.0"
+    "vuetify": "^2.6.10"
   },
   "devDependencies": {
     "@mdi/font": "^4.7.95",
